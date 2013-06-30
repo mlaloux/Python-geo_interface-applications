@@ -1,7 +1,7 @@
 Geo_interface
 =============
 
-The __geo_interface__ (GeoJSON-like) protocol was describeb by Sean Gillies (https://gist.github.com/2217756) and used by
+The __geo_interface__  (GeoJSON-like) protocol was  proposed by [Sean Gillies](https://gist.github.com/2217756) and used by
 
 * [**Shapely**](https://github.com/Toblerity/Shapely)
 * [**Fiona**](https://github.com/Toblerity/Fiona)
@@ -19,7 +19,7 @@ The __geo_interface__ (GeoJSON-like) protocol was describeb by Sean Gillies (htt
 Applications
 -------------
 
-ne of the great advantages of the  (Sean Gillies) is its ability to quickly examine the contents of a shapefile as dictionaries or write a shapefile in the same way, thanks to the protocol and generators/iterators:
+One big advantage is its ability to quickly examine the contents of a shapefile as dictionaries:
 
 ### with Fiona:
 
