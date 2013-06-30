@@ -54,6 +54,22 @@ ne of the great advantages of the  (Sean Gillies) is its ability to quickly exam
     >>> a.next()['properties']['DIP']
     55
     
+
+###with osgeo.ogr
+
+    def records(shapefile):  
+        # generator 
+        reader = ogr.Open(shapefile)
+        layer = ds.GetLayer(0)
+        for i in range(layer.GetFeatureCount()):
+            feature = layer.GetFeature(i)
+            yield json.loads(featurel.ExportToJson())
+            
+    >>> from osgeo import ogr
+    >>> a = records('point.shp')
+    >>> a.next()
+    {'geometry': {'type': 'Point', 'coordinates': (161821.09375, 79076.0703125)}, 'properties': {'DIP_DIR': 120, 'STRATI_TYP': 1, 'DIP': 30}}
+    
 ###with PyQGIS API2:   
 
     layer = qgis.utils.iface.activeLayer()  
