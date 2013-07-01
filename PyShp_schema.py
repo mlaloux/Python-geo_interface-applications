@@ -26,4 +26,7 @@ def schema2(reader):
                'geometry' : reader.shapes()[1].__geo_interface__['type']}
                
 shapefile.Reader.schema2 = property(lambda self: schema2(self))
+>>> reader.schema2
+{'geometry': 'Point', 'properties': {'DIRECTION': ['N', 3, 0], 'PENDAGE': ['N', 2, 0], 'TYPE': ['C', 10, 0]}}
+
                
