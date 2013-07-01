@@ -14,6 +14,8 @@ def schema(reader):
       return { 'type' : 'Feature',
                'properties' : properties,
                'geometry' : reader.shapes()[1].__geo_interface__['type']}
+               
+#  add a property to a class dynamically
 
 shapefile.Reader.schema = property(lambda self: schema(self))
 reader.schema
