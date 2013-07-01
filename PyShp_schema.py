@@ -1,12 +1,9 @@
 # shema comme Fiona
 
-
 import fiona
 c = fiona.open('strati2.shp')
 c.schema
 {'geometry': 'Point', 'properties': {u'DIRECTION': 'int', u'PENDAGE': 'int', u'TYPE': 'str:10'}}
-
-
 
 
 import shapefile
