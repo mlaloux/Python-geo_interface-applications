@@ -7,7 +7,7 @@ c.schema
 
 
 import shapefile
-reader = shapefile.Reader('strati2.shp')
+c = shapefile.Reader('strati2.shp')
 
 def schema(reader):
       properties = dict((d[0],d[1:]) for d in reader.fields[1:])
@@ -18,7 +18,7 @@ def schema(reader):
 #  add a property to a class dynamically
 
 shapefile.Reader.schema = property(lambda self: schema(self))
-reader.schema
+c.schema
 {'geometry': 'Point', 'type': 'Feature', 'properties': {'DIRECTION': ['N', 3, 0], 'PENDAGE': ['N', 2, 0], 'TYPE': ['C
 ', 10, 0]}}
 
@@ -28,7 +28,7 @@ def schema2(reader):
                'geometry' : reader.shapes()[1].__geo_interface__['type']}
                
 shapefile.Reader.schema2 = property(lambda self: schema2(self))
->>> reader.schema2
+c.schema2
 {'geometry': 'Point', 'properties': {'DIRECTION': ['N', 3, 0], 'PENDAGE': ['N', 2, 0], 'TYPE': ['C', 10, 0]}}
 
                
