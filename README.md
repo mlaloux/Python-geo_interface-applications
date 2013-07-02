@@ -13,7 +13,7 @@ The __geo_interface__  (GeoJSON-like) protocol was  proposed by [Sean Gillies](h
 * [**ArcPy**](http://gis.stackexchange.com/questions/10201/arcpy-geometry-geo-interface-and-asshape-function-loss)
 * [**Papyrus**](https://papyrus.readthedocs.org/en/master/creating_mapfish_views.html)
 * [**PyShp 1.1.7**](https://pypi.python.org/pypi/pyshp/1.1.7), implemented by Christian Lederman (https://github.com/cleder/pyshp)  
-* [**QGIS**](http://nathanw.net/2013/06/25/qgis-geo-interface/) with the new API, by Nathan Woodrow
+* [**QGIS**](http://nathanw.net/2013/06/25/qgis-geo-interface/) with the new API, by Nathan Woodrow or in [GeoJSON, nouveau lingua franca en géomatique ?](http://www.portailsig.org/content/geojson-nouveau-lingua-franca-en-geomatique) by martin Laloux
 
 
 Applications
