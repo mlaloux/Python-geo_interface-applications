@@ -23,6 +23,8 @@ One big advantage of the protocol is its ability to quickly examine the contents
 
 ### with Fiona:
 
+```python
+
     >>> import fiona   
     >>> f = fiona.open('point.shp')  
     >>> f.next()  
@@ -31,8 +33,11 @@ One big advantage of the protocol is its ability to quickly examine the contents
     (161485.09375, 79272.34375)  
     >>> f.next()['properties']['DIP']  
     55  
+```
     
 ###with PyShp:
+
+```python
 
     def records(filename):  
         # generator 
@@ -54,8 +59,11 @@ One big advantage of the protocol is its ability to quickly examine the contents
     >>> a.next()['properties']['DIP']
     55
     
+```
 
 ###with osgeo.ogr
+
+```python
 
     def records(shapefile):  
         # generator 
@@ -69,8 +77,11 @@ One big advantage of the protocol is its ability to quickly examine the contents
     >>> a = records('point.shp')
     >>> a.next()
     {'geometry': {'type': 'Point', 'coordinates': (161821.09375, 79076.0703125)}, 'properties': {'DIP_DIR': 120, 'STRATI_TYP': 1, 'DIP': 30}}
-    
+```   
+
 ###with PyQGIS API2:   
+
+```python
 
     layer = qgis.utils.iface.activeLayer()  
     def records(layer):  
@@ -84,12 +95,16 @@ One big advantage of the protocol is its ability to quickly examine the contents
     c = records(layer) 
     c.next() 
     {'geometry': {'type': 'Point', 'coordinates': (161821.09375, 79076.0703125)}, 'id': '0', 'properties': {u'DIP_DIR': 120, u'STRATI_TYP': 1, u'DIP': 30}}
-    
+```    
+
 ###conversion to shapely or pygeoif geometry
 
 with **shapely** (Sean Gillies, as with **pygeoif** of Christian Lederman):
+
+```python
 
     >>> from shapely.geometry import shape    
     >>> a = records('point.shp') 
     >>> print shape( a.next()['geometry'])
     POINT (161821.09375 79076.0703125)
+```
