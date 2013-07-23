@@ -3,7 +3,7 @@
 import shapefile
 
 # read the shapefile
-reader = shapefile.Reader("/Users/Shared/Dropbox/coupe_profile/strati2.shp")>>> fields = reader.fields[1:]
+reader = shapefile.Reader("strati.shp")
 fields = reader.fields[1:]
 field_names = [field[0] for field in fields]
 buffer = []
@@ -44,7 +44,7 @@ def writer(fileobj):
                buffer.append(result)
      except GeneratorExit:
           fileobj.write(dumps({"type": "FeatureCollection","features": buffer}, indent=2) + "\n")
-           fileobj.close()
+          fileobj.close()
 
 def records(filename):
      # generator
