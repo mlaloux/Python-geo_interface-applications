@@ -1,7 +1,7 @@
 Python Geo_interface applications
 =================================
 
-The __geo_interface__  (GeoJSON-like) protocol was  proposed by [Sean Gillies](https://gist.github.com/2217756) and used in Python by:
+The __geo_interface__  (GeoJSON-like) protocol was  proposed by [Sean Gillies](https://gist.github.com/2217756) and can be used in Python by:
 
 * [**Shapely**](https://github.com/Toblerity/Shapely)
 * [**Fiona**](https://github.com/Toblerity/Fiona)
