@@ -15,3 +15,7 @@ c = records(cur.fetchall())
 c.next()
 {'geometry': {u'type': u'Point', u'coordinates': [161821.09375, 79076.0703125]}, 'properties': {'dip_dir': 120, 'strati_typ': 1, 'dip': 30}}
 
+# convert to shapely geometry
+from shapely.geometry import shape
+print shape(c.next()['geometry'])
+POINT (161821.09375, 79076.0703125)
