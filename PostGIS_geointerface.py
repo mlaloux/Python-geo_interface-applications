@@ -9,7 +9,7 @@ def records(result):
 
 conn = psycopg2.connect("dbname='testpostgis'host='localhost' user='me'",cursor_factory=psycopg2.extras.DictCursor)
 cur = conn.cursor()
-sql = """SELECT "dip_dir","strati","dip", ST_AsGeoJSON(the_geom) from from point;"
+sql = """SELECT "dip_dir","strati","dip", ST_AsGeoJSON(the_geom) from from point;"""
 cur.execute(sql)
 c = records(cur.fetchall())
 c.next()
