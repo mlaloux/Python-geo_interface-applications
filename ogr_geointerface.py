@@ -1,7 +1,7 @@
 def records(shapefile):  
     # generator 
     reader = ogr.Open(shapefile)
-    layer = ds.GetLayer(0)
+    layer = reader.GetLayer(0)
     for i in range(layer.GetFeatureCount()):
         feature = layer.GetFeature(i)
         yield json.loads(featurel.ExportToJson())
