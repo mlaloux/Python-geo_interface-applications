@@ -4,7 +4,7 @@ def records(shapefile):
     layer = reader.GetLayer(0)
     for i in range(layer.GetFeatureCount()):
         feature = layer.GetFeature(i)
-        yield json.loads(featurel.ExportToJson())
+        yield json.loads(feature.ExportToJson())
 
 >>> from osgeo import ogr
 >>> a = records('point.shp')
