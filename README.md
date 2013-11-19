@@ -69,13 +69,13 @@ One big advantage of the protocol is its ability to quickly examine the contents
 
 ```python
 
-    def records(shapefile):  
+    def records(file):  
         # generator 
-        reader = ogr.Open(shapefile)
-        layer = ds.GetLayer(0)
+        reader = ogr.Open(file)
+        layer = reader.GetLayer(0)
         for i in range(layer.GetFeatureCount()):
             feature = layer.GetFeature(i)
-            yield json.loads(featurel.ExportToJson())
+            yield json.loads(feature.ExportToJson())
             
     >>> from osgeo import ogr
     >>> a = records('point.shp')
