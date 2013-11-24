@@ -1,6 +1,6 @@
 # my response to http://gis.stackexchange.com/questions/77974/how-to-convert-gml-to-geojson-using-python-and-ogr-with-geometry-transformation/77999#77999
 
-
+# geo_interface
 def records(file):  
     # generator 
     reader = ogr.Open(file)
