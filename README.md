@@ -18,6 +18,7 @@ The __geo_interface__  (GeoJSON-like) protocol was  proposed by [Sean Gillies](h
 * [**rasterstats**](https://github.com/perrygeo/python-raster-stats)
 * [**SpatiaLite**](http://www.gaia-gis.it/gaia-sins/) implemented here
 * [**PostGIS**](http://postgis.net/) implemented here
+* [**GeoDjango**](https://docs.djangoproject.com/en/dev/ref/contrib/gis/geos/)
 
 
 Applications
