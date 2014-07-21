@@ -13,6 +13,8 @@ The __geo_interface__  (GeoJSON-like) protocol was  proposed by [Sean Gillies](h
 * [**ArcPy**](http://gis.stackexchange.com/questions/10201/arcpy-geometry-geo-interface-and-asshape-function-loss)
 * [**Papyrus**](https://papyrus.readthedocs.org/en/master/creating_mapfish_views.html)
 * [**PyShp**](https://pypi.python.org/pypi/pyshp/1.1.7), implemented since version 1.1.7  by Christian Lederman (https://github.com/cleder/pyshp)  
+* Karim Bahgat has created a tempory fork of PyShp that can write new shapes based on geoJSON:
+[**Pyshp-fork-speedup-and-geojson-write**](https://github.com/karimbahgat/Pyshp-fork-speedup-and-geojson-write)
 * [**QGIS**](http://www.qgis.org/) with the new API with [monkey patching]( http://nathanw.net/2013/06/25/qgis-geo-interface/) by Nathan Woodrow or with generators in [GeoJSON, nouveau lingua franca en géomatique ?](http://www.portailsig.org/content/geojson-nouveau-lingua-franca-en-geomatique) by Martin Laloux
 * [**mapnik**](http://mapnik.org/)  implemented by Dane Springmeyer 
 * [**rasterstats**](https://github.com/perrygeo/python-raster-stats)
