@@ -42,7 +42,7 @@ One big advantage of the protocol is its ability to quickly examine the contents
     55  
 ```
     
-###with PyShp:
+### with PyShp:
 
 ```python
 
@@ -68,7 +68,7 @@ One big advantage of the protocol is its ability to quickly examine the contents
     
 ```
 
-###with osgeo.ogr
+### with osgeo.ogr
 
 ```python
 
@@ -86,7 +86,7 @@ One big advantage of the protocol is its ability to quickly examine the contents
     {'geometry': {'type': 'Point', 'coordinates': (161821.09375, 79076.0703125)}, 'properties': {'DIP_DIR': 120, 'STRATI_TYP': 1, 'DIP': 30}}
 ```   
 
-###with PyQGIS API2:   
+### with PyQGIS API2:   
 
 ```python
 
