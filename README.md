@@ -104,7 +104,7 @@ One big advantage of the protocol is its ability to quickly examine the contents
     {'geometry': {'type': 'Point', 'coordinates': (161821.09375, 79076.0703125)}, 'id': '0', 'properties': {u'DIP_DIR': 120, u'STRATI_TYP': 1, u'DIP': 30}}
 ```    
 
-###conversion to shapely or pygeoif geometry
+### conversion to shapely or pygeoif geometry
 
 with **shapely** (Sean Gillies, as with **pygeoif** of Christian Lederman):
 
