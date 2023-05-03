@@ -22,6 +22,8 @@ The __geo_interface__  (GeoJSON-like) protocol was  proposed by [Sean Gillies](h
 * [**PostGIS**](http://postgis.net/) implemented here
 * [**GeoDjango**](https://docs.djangoproject.com/en/dev/ref/contrib/gis/geos/)
 * [**pygml**](https://pypi.org/project/pygml/)
+* [**geodaisy**](https://pypi.org/project/geodaisy/)
+
 
 
 Applications
